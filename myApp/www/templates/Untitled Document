@@ -1,0 +1,20 @@
+ <ion-view view-title="Sign-In">
+        <ion-content>
+        <form name="loginForm" novalidate="" ng-submit="logar(loginForm)">
+          <div class="list">
+            <label class="item item-input">
+              <span class="input-label">E-mail</span>
+              <input type="text" ng-model="usuario.email">
+            </label>
+            <label class="item item-input">
+              <span class="input-label">Senha</span>
+              <input type="password" ng-model="usuario.senha">
+            </label>
+          </div>
+          <button class="button button-full button-positive" type="submit">
+            Entrar
+          </button>
+          </form>
+          </ion-content>
+          </ion-view>
+       
