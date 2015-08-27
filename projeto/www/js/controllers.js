@@ -53,8 +53,10 @@ angular.module('starter.controllers', [])
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
-    console.log($stateParams.playlistId);
-    $scope.recebeID = function(id){
-      console.log(id);
-    }
+
+
+    console.log("tese",$stateParams.play);
+    console.log("tese",$stateParams.play.id);
+    console.log("tese",$stateParams.play.title);
+
 });

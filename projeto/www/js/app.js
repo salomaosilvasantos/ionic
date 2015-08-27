@@ -60,7 +60,14 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     })
 
   .state('app.single', {
-    url: '/playlists/:playlistId',
+      url: "/playlists/:id/:title",
+
+      params: {
+        play:{
+          id: 0,
+          title: null
+        }
+      },
     views: {
       'menuContent': {
         templateUrl: 'templates/playlist.html',
