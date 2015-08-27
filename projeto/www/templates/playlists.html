@@ -1,0 +1,16 @@
+<ion-view view-title="Playlists">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="playlist in playlists"  ui-sref='app.single({playlistId: playlist.id})'>
+
+
+      <div class="card">
+        <div class="item item-text-wrap">
+          {{playlist.title}}
+        </div>
+      </div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
+
